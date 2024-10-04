@@ -68,17 +68,17 @@ circuit2_data.C = C_circuit2;
 % Save the struct
 save('circuit2_data.mat', 'circuit2_data');
 
-% Circuit 3 Data
+% Circuit 4 Data
 
 % Row Format: [I12, I13, I23, I24, I34]
-A_circuit3 = [4 0 0 2 0;
+A_circuit4 = [4 0 0 2 0;
               -4 6 -8 0 0;
               0 0 8 -2 5;
               1 0 -1 -1 0;
               0 1 1 0 -1];
 
 % Column Format: [I12; I13; I23; I24; I34]
-X_circuit3 = [1;
+X_circuit4 = [1;
               0.7;
               0.3;
               1.2;
@@ -86,17 +86,17 @@ X_circuit3 = [1;
 
 
 % Column Format: [C1; C1; C3; ... ; C5]
-C_circuit3 = [20;
+C_circuit4 = [20;
               0;
               0;
               0;
               0];
 
 % Create a struct to hold the data
-circuit3_data.A = A_circuit3;
-circuit3_data.X = X_circuit3;
-circuit3_data.C = C_circuit3;
+circuit4_data.A = A_circuit4;
+circuit4_data.X = X_circuit4;
+circuit4_data.C = C_circuit4;
 
 % Save the struct
-save('circuit3_data.mat', 'circuit3_data');
+save('circuit4_data.mat', 'circuit4_data');
 

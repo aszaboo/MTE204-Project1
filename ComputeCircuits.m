@@ -34,6 +34,7 @@ for lambda = lambda_values
     fprintf('Lambda = %.1f\n', lambda);
     
     for circuit_idx = 1:numel(circuit_data)
+        circuit_number = [1, 2, 4];  % Circuit numbers to match the loaded data
         % Access the data for the current circuit
         A = circuit_data{circuit_idx}.A;
         X_initial = circuit_data{circuit_idx}.X; % Initial guess
@@ -53,7 +54,7 @@ for lambda = lambda_values
         end
         
         % Store results in the table (ensure solution is stored as a cell for consistency)
-        newRow = {lambda, circuit_idx, converged, iterations, final_error, {X_solution'}};
+        newRow = {lambda, circuit_number(circuit_idx), converged, iterations, final_error, {X_solution'}};
         resultsTable = [resultsTable; newRow];
     end
 end
