@@ -8,7 +8,7 @@ addpath(srcDir);
 % Load the data
 load('circuit1_data.mat');
 load('circuit2_data.mat');
-load('circuit3_data.mat');
+load('circuit4_data.mat');
 
 % Set lambda values to iterate over
 lambda_values = 0.1:0.1:2.0;
@@ -18,7 +18,7 @@ es = 1e-5;  % Desired relative error (%)
 imax = 1000; % Maximum number of iterations
 
 % Store circuit data in a struct array
-circuit_data = {circuit1_data, circuit2_data, circuit3_data};
+circuit_data = {circuit1_data, circuit2_data, circuit4_data};
 
 % Create results directory if it doesn't exist
 resultsDir = fullfile(currentDir, 'results');
