@@ -1,3 +1,13 @@
+# Project Explanation
+
+In this project, the Gauss-Seidel iterative method is applied to solve the systems of linear equations derived from Kirchhoff's laws for electrical circuit analysis. The goal is to find the unknown currents and voltages in resistor circuits. Here’s a breakdown of the concepts, assumptions, and choices made during the implementation process:
+
+### Circuits Analyzed
+
+![Circuit1](images/Circuit1.png)
+![Circuit2](images/Circuit2.png)
+![Circuit4](images/Circuit4.png)
+
 ### Understanding of Concepts
 
 1. **Kirchhoff’s Current and Voltage Laws (KCL & KVL)**:
